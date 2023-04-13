@@ -1,0 +1,47 @@
+.profile-card {
+    padding: 1rem;
+    background: #F7FAFC;
+    border: 1px solid #D3DEE9;
+    border-radius: 20px;
+    display: flex;
+    gap: 1rem;
+
+    justify-content: center;
+    align-items: center;
+
+    h2 {
+        font-size: 1.3rem;
+        font-weight: 600;
+    }
+
+    .contact {
+        color: #718096;
+        font-weight: 500;
+        font-size: 0.8rem;
+
+    }
+
+    .avatar {
+        width: 45px;
+        height: 45px;
+
+        background: var(--secondary);
+        border-radius: 50%;
+        font-weight: bolder;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        span {
+            font-size: 1.5rem;
+            margin-top: -7px;
+            user-select: none;
+            cursor: default;
+            font-weight: 700;
+        }
+    }
+
+
+
+
+}

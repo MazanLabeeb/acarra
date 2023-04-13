@@ -1,0 +1,23 @@
+header {
+    background: var(--dark);
+    padding: 1rem;
+    color: var(--light);
+    display: flex;
+    justify-content: space-between;
+    gap: 1rem;
+
+    p {
+        font-size: 1.7rem;
+        font-weight: 600;
+    }
+
+    .close {
+        font-size: 2rem;
+        font-weight: 600;
+        cursor: pointer;
+
+        &:hover {
+            opacity: 0.8;
+        }
+    }
+}

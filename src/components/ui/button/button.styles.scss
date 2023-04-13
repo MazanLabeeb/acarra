@@ -1,0 +1,42 @@
+.btn {
+    padding: 1rem 0.7rem;
+    border: none;
+    font-size: 1rem;
+    width: 100%;
+    border-radius: 10px;
+    font-weight: 600;
+    transition: var(--transition-fast);
+    cursor: pointer;
+}
+
+.btn-secondary {
+    background: var(--secondary);
+
+    &:hover {
+        background: #D3DEE9;
+    }
+}
+
+.btn-light {
+    border: 1px solid #262626;
+    border-radius: 12px;
+    background: #ffffff;
+}
+
+.btn-primary {
+
+    background: #1E21FF;
+    border-radius: 12px;
+    color: white;
+
+    &:hover{
+        background: #262626;
+        transition: var(--transition-fast);
+    }
+}
+
+.btn-transparent{
+    background: transparent;
+    text-align: left;
+
+}

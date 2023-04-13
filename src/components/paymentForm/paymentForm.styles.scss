@@ -1,0 +1,58 @@
+form {
+
+    h1 {
+        font-style: normal;
+        font-weight: 700;
+        font-size: 1.7rem;
+        margin-top: 5px;
+        line-height: 68px;
+        letter-spacing: -0.3px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    .form-group {
+        display: flex;
+        flex-direction: column;
+        gap: 0.6rem;
+    }
+
+    label {
+        font-weight: 600;
+        font-size: 0.7rem;
+    }
+
+    input {
+        padding: 1rem 0.8rem;
+        background: #FFFFFF;
+        border: 1px solid #D3DEE9;
+        border-radius: 12px;
+    }
+
+    ::placeholder {
+        color: #D3DEE9;
+        font-family: var(--font);
+    }
+
+    .btn-group {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        gap: 1rem;
+
+    }
+
+    .policy {
+        display: flex;
+        gap: 1rem;
+        align-items: flex-start;
+        justify-content: center;
+
+        label {
+            font-style: normal;
+            font-weight: 500;
+            color: #718096;
+            font-size: 0.8rem;
+            margin-top: -5px;
+        }
+    }
+
+}

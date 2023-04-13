@@ -1,0 +1,51 @@
+.selected-service {
+    h2 {
+        letter-spacing: -0.3px;
+        font-feature-settings: 'pnum' on, 'lnum' on;
+    }
+
+    .card {
+        background: #FFFFFF;
+        border: 1px solid #D3DEE9;
+        border-radius: 20px;
+        padding: 1rem 0.8rem;
+        gap: 1rem;
+
+        display: flex;
+        align-content: center;
+
+        .img-wrap {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        img {
+            border-radius: 8px;
+            width: 75px;
+            height: 75px;
+        }
+
+        .details {
+            display: flex;
+            flex-direction: column;
+            gap: 0.2rem;
+        }
+
+        p {
+            color: #718096;
+            font-size: 0.8rem;
+            display: flex;
+            gap: 5px;
+            align-items: center;
+        }
+
+        .inline-icon-bold {
+            font-size: 1rem;
+        }
+
+        h3 {
+            font-weight: 600;
+        }
+    }
+}
