@@ -1,7 +1,19 @@
+footer {
+    .footer-inner-wrapper {
+        max-width: 700px;
+        display: flex;
+        gap: 4rem;
+        margin: 0 auto;
 
-footer{
+    }
+
+
     padding: 1.2rem;
     border-top: 1px solid var(--secondary);
-    display: flex;
-    gap: 4rem;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 33;
+    background-color: white;
+
 }

@@ -32,7 +32,7 @@ const PaymentForm = () => {
             </Button>
         </div>
 
-        <div className="policy mt-1">
+        <div className="policy mt-1 mb-7">
             <input type="checkbox" name="policy" id="policy" />
             <label htmlFor="policy">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed <a href="">do eiusmod</a>
