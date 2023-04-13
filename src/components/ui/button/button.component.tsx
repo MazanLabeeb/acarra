@@ -3,14 +3,15 @@ import React from 'react';
 
 type TypesButtonProps = {
     className: string;
-    children: React.ReactNode
+    children: React.ReactNode;
+    onClick: () => void;
 }
 
 const Button = (props: TypesButtonProps) => {
-    let { className, children } = props;
+    let { className, children, ...rest } = props;
 
 
-    return <button type='button' className={className}>
+    return <button {...rest} type='button' className={className}>
         {children}
     </button>
 }

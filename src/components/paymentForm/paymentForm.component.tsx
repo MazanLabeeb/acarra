@@ -1,7 +1,14 @@
+import { useState } from 'react';
 import Button from '../ui/button/button.component';
 import './paymentForm.styles.scss';
 
 const PaymentForm = () => {
+    const [active, setActive] = useState('cash');
+
+    const ChoosePaymentMethodHandler = (type: string) => {
+        setActive(type);
+    }
+
     return <form className='mt-1'>
         <div className="form-group mt-1">
             <label htmlFor="address">
@@ -21,13 +28,13 @@ const PaymentForm = () => {
 
         <h1>Choose a way to Pay</h1>
         <div className="btn-group">
-            <Button className='btn btn-light' >
+            <Button onClick={() => ChoosePaymentMethodHandler('cash')} className={active === 'cash' ? 'btn btn-light' : 'btn btn-secondary'} >
                 Cash
             </Button>
-            <Button className='btn btn-secondary' >
+            <Button onClick={() => ChoosePaymentMethodHandler('card')} className={active === 'card' ? 'btn btn-light' : 'btn btn-secondary'} >
                 Credit Card
             </Button>
-            <Button className='btn btn-secondary' >
+            <Button onClick={() => ChoosePaymentMethodHandler('bank')} className={active === 'bank' ? 'btn btn-light' : 'btn btn-secondary'} >
                 eWallet/Virtual bank
             </Button>
         </div>

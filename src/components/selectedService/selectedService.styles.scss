@@ -36,6 +36,8 @@
             color: #718096;
             font-size: 0.8rem;
             display: flex;
+            letter-spacing: -0.3px;
+            font-weight: 500;
             gap: 5px;
             align-items: center;
         }
@@ -46,6 +48,7 @@
 
         h3 {
             font-weight: 600;
+            letter-spacing: -0.3px;
         }
     }
 }
