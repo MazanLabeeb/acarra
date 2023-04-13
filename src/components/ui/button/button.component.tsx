@@ -4,7 +4,7 @@ import React from 'react';
 type TypesButtonProps = {
     className: string;
     children: React.ReactNode;
-    onClick: () => void;
+    onClick ?: () => void;
 }
 
 const Button = (props: TypesButtonProps) => {
